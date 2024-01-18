@@ -3,11 +3,8 @@ import os
 import streamlit as st
 import numpy as np
 import pandas as pd
-from textblob import TextBlob
-import openai
 from PIL import Image, ImageOps
 
-openai.api_key = os.getenv('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')
 def style_app():
     st.markdown(
         '''
