@@ -43,15 +43,6 @@ def display_main_app():
     st.title("SELAMAT ULANG TAHUN WOI WUS WUS WUS WUZZZZZZZZZZZZZ")
     st.markdown("### Aplikasi ini menunjukkan betapa besarnya cinta saya kepada Silvani.")
 
-# Membuat dan menampilkan grafik cinta
-def display_love_graph():
-    x = np.array(["Perhatian", "Kesetiaan", "Kecintaan", "Pengertian"])
-    y = np.array([100, 100, 100, 100])
-
-    df = pd.DataFrame({"Aspek": x, "Skor": y})
-    fig, ax = plt.subplots()
-    ax.bar(df["Aspek"], df["Skor"], color='pink')
-    st.pyplot(fig)
 
 def floating_balloons(character):
     st.markdown(f"""
@@ -155,7 +146,6 @@ def main():
     
     style_app()
     display_main_app()
-    display_love_graph()
     custom_content_panels()
 
 if __name__ == "__main__":
